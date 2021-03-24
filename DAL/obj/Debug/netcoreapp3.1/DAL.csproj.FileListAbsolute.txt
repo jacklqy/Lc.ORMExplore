@@ -1,0 +1,14 @@
+D:\luchao\Lc.ORMExplore\DAL\bin\Debug\netcoreapp3.1\DAL.deps.json
+D:\luchao\Lc.ORMExplore\DAL\bin\Debug\netcoreapp3.1\DAL.dll
+D:\luchao\Lc.ORMExplore\DAL\bin\Debug\netcoreapp3.1\DAL.pdb
+D:\luchao\Lc.ORMExplore\DAL\obj\Debug\netcoreapp3.1\DAL.csprojAssemblyReference.cache
+D:\luchao\Lc.ORMExplore\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfoInputs.cache
+D:\luchao\Lc.ORMExplore\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfo.cs
+D:\luchao\Lc.ORMExplore\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CoreCompileInputs.cache
+D:\luchao\Lc.ORMExplore\DAL\obj\Debug\netcoreapp3.1\DAL.dll
+D:\luchao\Lc.ORMExplore\DAL\obj\Debug\netcoreapp3.1\DAL.pdb
+D:\luchao\Lc.ORMExplore\DAL\bin\Debug\netcoreapp3.1\Frameworks.dll
+D:\luchao\Lc.ORMExplore\DAL\bin\Debug\netcoreapp3.1\Model.dll
+D:\luchao\Lc.ORMExplore\DAL\bin\Debug\netcoreapp3.1\Frameworks.pdb
+D:\luchao\Lc.ORMExplore\DAL\bin\Debug\netcoreapp3.1\Model.pdb
+D:\luchao\Lc.ORMExplore\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CopyComplete

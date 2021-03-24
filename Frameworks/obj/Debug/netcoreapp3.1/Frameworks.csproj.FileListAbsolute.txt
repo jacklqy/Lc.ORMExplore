@@ -1,0 +1,9 @@
+D:\luchao\Lc.ORMExplore\Frameworks\bin\Debug\netcoreapp3.1\Frameworks.deps.json
+D:\luchao\Lc.ORMExplore\Frameworks\bin\Debug\netcoreapp3.1\Frameworks.dll
+D:\luchao\Lc.ORMExplore\Frameworks\bin\Debug\netcoreapp3.1\Frameworks.pdb
+D:\luchao\Lc.ORMExplore\Frameworks\obj\Debug\netcoreapp3.1\Frameworks.AssemblyInfoInputs.cache
+D:\luchao\Lc.ORMExplore\Frameworks\obj\Debug\netcoreapp3.1\Frameworks.AssemblyInfo.cs
+D:\luchao\Lc.ORMExplore\Frameworks\obj\Debug\netcoreapp3.1\Frameworks.csproj.CoreCompileInputs.cache
+D:\luchao\Lc.ORMExplore\Frameworks\obj\Debug\netcoreapp3.1\Frameworks.dll
+D:\luchao\Lc.ORMExplore\Frameworks\obj\Debug\netcoreapp3.1\Frameworks.pdb
+D:\luchao\Lc.ORMExplore\Frameworks\obj\Debug\netcoreapp3.1\Frameworks.csprojAssemblyReference.cache
