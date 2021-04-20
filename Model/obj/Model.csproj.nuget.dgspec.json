@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "D:\\github\\Lc.ORMExplore\\Model\\Model.csproj": {}
   },
   "projects": {
@@ -12,9 +13,22 @@
         "projectPath": "D:\\github\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj",
         "packagesPath": "C:\\Users\\BRH201\\.nuget\\packages\\",
         "outputPath": "D:\\github\\Lc.ORMExplore\\Frameworks\\obj\\",
+=======
+    "G:\\github\\Lc.ORMExplore\\Model\\Model.csproj": {}
+  },
+  "projects": {
+    "G:\\github\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\github\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj",
+        "projectName": "Frameworks",
+        "projectPath": "G:\\github\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj",
+        "packagesPath": "C:\\Users\\Administrator.CQLZD-2021OAHFP\\.nuget\\packages\\",
+        "outputPath": "G:\\github\\Lc.ORMExplore\\Frameworks\\obj\\",
+>>>>>>> 99033ec2445efd145c35c835a2fc02bd47406e0a
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\BRH201\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator.CQLZD-2021OAHFP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -68,10 +82,11 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
+<<<<<<< HEAD
     "D:\\github\\Lc.ORMExplore\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -80,9 +95,19 @@
         "projectPath": "D:\\github\\Lc.ORMExplore\\Model\\Model.csproj",
         "packagesPath": "C:\\Users\\BRH201\\.nuget\\packages\\",
         "outputPath": "D:\\github\\Lc.ORMExplore\\Model\\obj\\",
+=======
+    "G:\\github\\Lc.ORMExplore\\Model\\Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\github\\Lc.ORMExplore\\Model\\Model.csproj",
+        "projectName": "Model",
+        "projectPath": "G:\\github\\Lc.ORMExplore\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\Administrator.CQLZD-2021OAHFP\\.nuget\\packages\\",
+        "outputPath": "G:\\github\\Lc.ORMExplore\\Model\\obj\\",
+>>>>>>> 99033ec2445efd145c35c835a2fc02bd47406e0a
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\BRH201\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator.CQLZD-2021OAHFP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -96,8 +121,13 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
+<<<<<<< HEAD
               "D:\\github\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj": {
                 "projectPath": "D:\\github\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj"
+=======
+              "G:\\github\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj": {
+                "projectPath": "G:\\github\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj"
+>>>>>>> 99033ec2445efd145c35c835a2fc02bd47406e0a
               }
             }
           }
@@ -126,7 +156,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

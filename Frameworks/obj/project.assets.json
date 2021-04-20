@@ -310,19 +310,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\BRH201\\.nuget\\packages\\": {}
+    "C:\\Users\\Administrator.CQLZD-2021OAHFP\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "D:\\github\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj",
       "projectName": "Frameworks",
       "projectPath": "D:\\github\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj",
       "packagesPath": "C:\\Users\\BRH201\\.nuget\\packages\\",
       "outputPath": "D:\\github\\Lc.ORMExplore\\Frameworks\\obj\\",
+=======
+      "projectUniqueName": "G:\\github\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj",
+      "projectName": "Frameworks",
+      "projectPath": "G:\\github\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj",
+      "packagesPath": "C:\\Users\\Administrator.CQLZD-2021OAHFP\\.nuget\\packages\\",
+      "outputPath": "G:\\github\\Lc.ORMExplore\\Frameworks\\obj\\",
+>>>>>>> 99033ec2445efd145c35c835a2fc02bd47406e0a
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\BRH201\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Administrator.CQLZD-2021OAHFP\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -376,7 +384,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }
