@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GithubCode\\Lc.ORMExplore\\Model\\Model.csproj": {}
+    "D:\\github\\Lc.ORMExplore\\Model\\Model.csproj": {}
   },
   "projects": {
-    "D:\\GithubCode\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj": {
+    "D:\\github\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GithubCode\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj",
+        "projectUniqueName": "D:\\github\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj",
         "projectName": "Frameworks",
-        "projectPath": "D:\\GithubCode\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj",
+        "projectPath": "D:\\github\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj",
         "packagesPath": "C:\\Users\\BRH201\\.nuget\\packages\\",
-        "outputPath": "D:\\GithubCode\\Lc.ORMExplore\\Frameworks\\obj\\",
+        "outputPath": "D:\\github\\Lc.ORMExplore\\Frameworks\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\BRH201\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -72,14 +72,14 @@
         }
       }
     },
-    "D:\\GithubCode\\Lc.ORMExplore\\Model\\Model.csproj": {
+    "D:\\github\\Lc.ORMExplore\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GithubCode\\Lc.ORMExplore\\Model\\Model.csproj",
+        "projectUniqueName": "D:\\github\\Lc.ORMExplore\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "D:\\GithubCode\\Lc.ORMExplore\\Model\\Model.csproj",
+        "projectPath": "D:\\github\\Lc.ORMExplore\\Model\\Model.csproj",
         "packagesPath": "C:\\Users\\BRH201\\.nuget\\packages\\",
-        "outputPath": "D:\\GithubCode\\Lc.ORMExplore\\Model\\obj\\",
+        "outputPath": "D:\\github\\Lc.ORMExplore\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\BRH201\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -96,8 +96,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\GithubCode\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj": {
-                "projectPath": "D:\\GithubCode\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj"
+              "D:\\github\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj": {
+                "projectPath": "D:\\github\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj"
               }
             }
           }

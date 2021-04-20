@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GithubCode\\Lc.ORMExplore\\ORMExplore\\ORMExplore.csproj": {}
+    "D:\\github\\Lc.ORMExplore\\ORMExplore\\ORMExplore.csproj": {}
   },
   "projects": {
-    "D:\\GithubCode\\Lc.ORMExplore\\DAL\\DAL.csproj": {
+    "D:\\github\\Lc.ORMExplore\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GithubCode\\Lc.ORMExplore\\DAL\\DAL.csproj",
+        "projectUniqueName": "D:\\github\\Lc.ORMExplore\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "D:\\GithubCode\\Lc.ORMExplore\\DAL\\DAL.csproj",
+        "projectPath": "D:\\github\\Lc.ORMExplore\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\BRH201\\.nuget\\packages\\",
-        "outputPath": "D:\\GithubCode\\Lc.ORMExplore\\DAL\\obj\\",
+        "outputPath": "D:\\github\\Lc.ORMExplore\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\BRH201\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\GithubCode\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj": {
-                "projectPath": "D:\\GithubCode\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj"
+              "D:\\github\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj": {
+                "projectPath": "D:\\github\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj"
               },
-              "D:\\GithubCode\\Lc.ORMExplore\\Model\\Model.csproj": {
-                "projectPath": "D:\\GithubCode\\Lc.ORMExplore\\Model\\Model.csproj"
+              "D:\\github\\Lc.ORMExplore\\Model\\Model.csproj": {
+                "projectPath": "D:\\github\\Lc.ORMExplore\\Model\\Model.csproj"
               }
             }
           }
@@ -71,14 +71,14 @@
         }
       }
     },
-    "D:\\GithubCode\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj": {
+    "D:\\github\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GithubCode\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj",
+        "projectUniqueName": "D:\\github\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj",
         "projectName": "Frameworks",
-        "projectPath": "D:\\GithubCode\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj",
+        "projectPath": "D:\\github\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj",
         "packagesPath": "C:\\Users\\BRH201\\.nuget\\packages\\",
-        "outputPath": "D:\\GithubCode\\Lc.ORMExplore\\Frameworks\\obj\\",
+        "outputPath": "D:\\github\\Lc.ORMExplore\\Frameworks\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\BRH201\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -139,14 +139,14 @@
         }
       }
     },
-    "D:\\GithubCode\\Lc.ORMExplore\\Model\\Model.csproj": {
+    "D:\\github\\Lc.ORMExplore\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GithubCode\\Lc.ORMExplore\\Model\\Model.csproj",
+        "projectUniqueName": "D:\\github\\Lc.ORMExplore\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "D:\\GithubCode\\Lc.ORMExplore\\Model\\Model.csproj",
+        "projectPath": "D:\\github\\Lc.ORMExplore\\Model\\Model.csproj",
         "packagesPath": "C:\\Users\\BRH201\\.nuget\\packages\\",
-        "outputPath": "D:\\GithubCode\\Lc.ORMExplore\\Model\\obj\\",
+        "outputPath": "D:\\github\\Lc.ORMExplore\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\BRH201\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -163,8 +163,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\GithubCode\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj": {
-                "projectPath": "D:\\GithubCode\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj"
+              "D:\\github\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj": {
+                "projectPath": "D:\\github\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj"
               }
             }
           }
@@ -197,14 +197,14 @@
         }
       }
     },
-    "D:\\GithubCode\\Lc.ORMExplore\\ORMExplore\\ORMExplore.csproj": {
+    "D:\\github\\Lc.ORMExplore\\ORMExplore\\ORMExplore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GithubCode\\Lc.ORMExplore\\ORMExplore\\ORMExplore.csproj",
+        "projectUniqueName": "D:\\github\\Lc.ORMExplore\\ORMExplore\\ORMExplore.csproj",
         "projectName": "ORMExplore",
-        "projectPath": "D:\\GithubCode\\Lc.ORMExplore\\ORMExplore\\ORMExplore.csproj",
+        "projectPath": "D:\\github\\Lc.ORMExplore\\ORMExplore\\ORMExplore.csproj",
         "packagesPath": "C:\\Users\\BRH201\\.nuget\\packages\\",
-        "outputPath": "D:\\GithubCode\\Lc.ORMExplore\\ORMExplore\\obj\\",
+        "outputPath": "D:\\github\\Lc.ORMExplore\\ORMExplore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\BRH201\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -221,11 +221,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\GithubCode\\Lc.ORMExplore\\DAL\\DAL.csproj": {
-                "projectPath": "D:\\GithubCode\\Lc.ORMExplore\\DAL\\DAL.csproj"
+              "D:\\github\\Lc.ORMExplore\\DAL\\DAL.csproj": {
+                "projectPath": "D:\\github\\Lc.ORMExplore\\DAL\\DAL.csproj"
               },
-              "D:\\GithubCode\\Lc.ORMExplore\\Model\\Model.csproj": {
-                "projectPath": "D:\\GithubCode\\Lc.ORMExplore\\Model\\Model.csproj"
+              "D:\\github\\Lc.ORMExplore\\Model\\Model.csproj": {
+                "projectPath": "D:\\github\\Lc.ORMExplore\\Model\\Model.csproj"
               }
             }
           }
@@ -249,6 +249,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.13, 3.1.13]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

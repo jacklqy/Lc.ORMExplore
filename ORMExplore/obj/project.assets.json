@@ -814,11 +814,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GithubCode\\Lc.ORMExplore\\ORMExplore\\ORMExplore.csproj",
+      "projectUniqueName": "D:\\github\\Lc.ORMExplore\\ORMExplore\\ORMExplore.csproj",
       "projectName": "ORMExplore",
-      "projectPath": "D:\\GithubCode\\Lc.ORMExplore\\ORMExplore\\ORMExplore.csproj",
+      "projectPath": "D:\\github\\Lc.ORMExplore\\ORMExplore\\ORMExplore.csproj",
       "packagesPath": "C:\\Users\\BRH201\\.nuget\\packages\\",
-      "outputPath": "D:\\GithubCode\\Lc.ORMExplore\\ORMExplore\\obj\\",
+      "outputPath": "D:\\github\\Lc.ORMExplore\\ORMExplore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\BRH201\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -835,11 +835,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\GithubCode\\Lc.ORMExplore\\DAL\\DAL.csproj": {
-              "projectPath": "D:\\GithubCode\\Lc.ORMExplore\\DAL\\DAL.csproj"
+            "D:\\github\\Lc.ORMExplore\\DAL\\DAL.csproj": {
+              "projectPath": "D:\\github\\Lc.ORMExplore\\DAL\\DAL.csproj"
             },
-            "D:\\GithubCode\\Lc.ORMExplore\\Model\\Model.csproj": {
-              "projectPath": "D:\\GithubCode\\Lc.ORMExplore\\Model\\Model.csproj"
+            "D:\\github\\Lc.ORMExplore\\Model\\Model.csproj": {
+              "projectPath": "D:\\github\\Lc.ORMExplore\\Model\\Model.csproj"
             }
           }
         }
@@ -863,6 +863,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.1.13, 3.1.13]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

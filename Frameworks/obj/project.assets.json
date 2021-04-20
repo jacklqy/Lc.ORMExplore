@@ -315,11 +315,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GithubCode\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj",
+      "projectUniqueName": "D:\\github\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj",
       "projectName": "Frameworks",
-      "projectPath": "D:\\GithubCode\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj",
+      "projectPath": "D:\\github\\Lc.ORMExplore\\Frameworks\\Frameworks.csproj",
       "packagesPath": "C:\\Users\\BRH201\\.nuget\\packages\\",
-      "outputPath": "D:\\GithubCode\\Lc.ORMExplore\\Frameworks\\obj\\",
+      "outputPath": "D:\\github\\Lc.ORMExplore\\Frameworks\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\BRH201\\AppData\\Roaming\\NuGet\\NuGet.Config",

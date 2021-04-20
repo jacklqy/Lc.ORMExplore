@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Yl07dpo2+T3UdMAAxgsJ+TzeZhF1+MMrk1xKNKVO0EtxROvW3bTlTFSm7oKrqfCm9KGKz6QjqtaM1rCITS8eyg==",
+  "dgSpecHash": "9h+iGC/IQEjHgj/Go8ynlYZDBo46q2JWdXgNhHJ5A19cSTCaIxjZwzrhDctej+daWz7VUg56lP/jkHBsyB0Jxg==",
   "success": true,
-  "projectFilePath": "D:\\GithubCode\\Lc.ORMExplore\\ORMExplore\\ORMExplore.csproj",
+  "projectFilePath": "D:\\github\\Lc.ORMExplore\\ORMExplore\\ORMExplore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\BRH201\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
     "C:\\Users\\BRH201\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
@@ -21,7 +21,8 @@
     "C:\\Users\\BRH201\\.nuget\\packages\\system.data.sqlclient\\4.8.2\\system.data.sqlclient.4.8.2.nupkg.sha512",
     "C:\\Users\\BRH201\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
     "C:\\Users\\BRH201\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
-    "C:\\Users\\BRH201\\.nuget\\packages\\system.text.json\\5.0.0\\system.text.json.5.0.0.nupkg.sha512"
+    "C:\\Users\\BRH201\\.nuget\\packages\\system.text.json\\5.0.0\\system.text.json.5.0.0.nupkg.sha512",
+    "C:\\Users\\BRH201\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
   ],
   "logs": []
 }
