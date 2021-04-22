@@ -1,0 +1,167 @@
+要注意的是，只能同步数据，不能同步试图和过程，但是对于表字段会同步过去
+同步的表上必须有主键 ，订阅的服务器上的非聚集索引会消失的 有必要必须重建，还有订阅服务器上必须经常整理索引碎片 否则查询会越来越慢。。
+参与发布和订阅的表，必须得有主键。
+
+--------查询数据库索引，需要单独将非聚集索引拿出来在订阅库执行一下。
+BEGIN
+WITH tx
+AS ( SELECT a.object_id ,
+b.name AS schema_name ,
+a.name AS table_name ,
+c.name AS ix_name ,
+c.is_unique AS ix_unique ,
+c.type_desc AS ix_type_desc ,
+d.index_column_id ,
+d.is_included_column ,
+e.name AS column_name ,
+f.name AS fg_name ,
+d.is_descending_key AS is_descending_key ,
+c.is_primary_key ,
+c.is_unique_constraint
+FROM sys.tables AS a
+INNER JOIN sys.schemas AS b ON a.schema_id = b.schema_id
+AND a.is_ms_shipped = 0
+INNER JOIN sys.indexes AS c ON a.object_id = c.object_id
+INNER JOIN sys.index_columns AS d ON d.object_id = c.object_id
+AND d.index_id = c.index_id
+INNER JOIN sys.columns AS e ON e.object_id = d.object_id
+AND e.column_id = d.column_id
+INNER JOIN sys.data_spaces AS f ON f.data_space_id = c.data_space_id
+)
+SELECT Drop_Index = CASE WHEN ( a.is_primary_key = 1
+OR a.is_unique_constraint = 1
+)
+THEN 'IF EXISTS (SELECT * FROM sys.indexes WHERE object_id = OBJECT_ID( ''' +a.SCHEMA_NAME+'.'+ a.table_name+''') AND name ='''+a.ix_name+''')'
++ 'ALTER TABLE '+a.schema_name + '.'+ a.table_name+' DROP CONSTRAINT ' + a.ix_name
+
+ELSE 'IF EXISTS (SELECT * FROM sys.indexes WHERE object_id = OBJECT_ID( ''' +a.SCHEMA_NAME+'.'+ a.table_name+''') AND name ='''+a.ix_name+''')'
++ ' DROP INDEX ' + a.ix_name + ' ON ' + a.schema_name + '.'+ a.table_name
+END ,
+Create_Index = CASE WHEN ( a.is_primary_key = 1
+OR a.is_unique_constraint = 1
+)
+THEN 'ALTER TABLE ' +a.schema_name + '.'+ a.table_name
++ ' ADD CONSTRAINT ' + a.ix_name
++ CASE WHEN a.is_primary_key = 1
+THEN ' PRIMARY KEY'
+ELSE ' UNIQUE'
+END + '('
++ indexColumns.ix_index_column_name
++ ')'
+ELSE 'CREATE '
++ CASE WHEN a.ix_unique = 1
+THEN 'UNIQUE '
+ELSE ''
+END + a.ix_type_desc + ' INDEX '
++ a.ix_name COLLATE SQL_Latin1_General_CP1_CI_AS
++ ' ON ' + a.schema_name + '.'
++ a.table_name + '('
++ indexColumns.ix_index_column_name
++ ')'
++ CASE WHEN IncludeIndex.ix_included_column_name IS NOT NULL
+THEN ' INCLUDE ('
++ IncludeIndex.ix_included_column_name
++ ')'
+ELSE ''
+END + ' ON [' + a.fg_name + ']'
+END ,
+CASE WHEN a.ix_unique = 1 THEN 'UNIQUE'
+END AS ix_unique ,
+a.ix_type_desc ,
+a.ix_name ,
+a.schema_name ,
+a.table_name ,
+indexColumns.ix_index_column_name ,
+IncludeIndex.ix_included_column_name ,
+a.fg_name ,
+a.is_primary_key ,
+a.is_unique_constraint
+FROM ( SELECT DISTINCT
+ix_unique ,
+ix_type_desc ,
+ix_name ,
+schema_name ,
+table_name ,
+fg_name ,
+is_primary_key ,
+is_unique_constraint
+FROM tx
+) AS a
+OUTER APPLY ( SELECT ix_index_column_name = STUFF(( SELECT
+','
++ column_name
++ CASE
+WHEN is_descending_key = 1
+THEN ' DESC'
+ELSE ''
+END
+FROM
+tx AS b
+WHERE
+schema_name = a.schema_name
+AND table_name = a.table_name
+AND ix_name = a.ix_name
+AND ix_type_desc = a.ix_type_desc
+AND fg_name = a.fg_name
+AND is_included_column = 0
+ORDER BY index_column_id
+FOR
+XML
+PATH('')
+), 1, 1, '')
+) IndexColumns
+OUTER APPLY ( SELECT ix_included_column_name = STUFF(( SELECT
+','
++ column_name
+FROM
+tx AS b
+WHERE
+schema_name = a.schema_name
+AND table_name = a.table_name
+AND ix_name = a.ix_name
+AND ix_type_desc = a.ix_type_desc
+AND fg_name = a.fg_name
+AND is_included_column = 1
+ORDER BY index_column_id
+FOR
+XML
+PATH('')
+), 1, 1, '')
+) IncludeIndex
+ORDER BY --a.schema_name ,
+a.table_name ,
+a.ix_name ;
+END
+
+
+
+-------------------应用复制的命令时在订阅服务器上找不到该行 解决办法----------------------
+https://blog.51cto.com/26610406/1655936
+
+在SQL Server的复制中出现在错误“应用复制的命令时在订阅服务器上找不到该行”，换上以前的做法就是删除掉这个复制，然后再新建一个复制，但是这次，我突然想BAIDU一下，看看别人是怎么处理这个问题的，然后发现找到的文章都是从MSDN上抄下来的，因此我决定把我的做法写下来。
+
+　　首先查MSDN，确定这个错误的ID为20598，这个下面会用到；确定了错误ID之后，有两种方法可以跳过这个错误
+
+　　第一种是使用“右键-》复制-》分发服务器属性-》默认配置文件-》然后新建一个新的配置文件，”这样子就可以让分发的所有复制都使用新的配置文件，一般用来修改一些公共的参数。
+
+　　第二种是打开复制监视器，然后双击你要修改的那个复制，在“操作”菜单下有个代理配置文件，打开它后新建一个配置文件，然后使用这个配置文件，这种方法用来修改单个的复制的参数。
+
+　　新建后修改-SkipErrors这一项，点“值”栏后输入刚刚查到的ID号，就是20598，点确定，然后勾上你刚刚新建的这个配置文件。
+
+　　重启代理，打开复制监视器，你会发现它已经跳过了这个错误。
+
+　　如果是对等数据复制的话，要慎用，因为可能导致两个数据库的数据不一致，请先查明原因，然后再决定是否要跳过这个错误。 
+ 
+　　于事务性复制，有两种方法可以跳过在分发过程中遇到的错误：
+
+　　分发代理的 -SkipErrors 参数，可用来跳过某种类型的错误。有错误的事务将不提交，但后续的事务将提交。
+
+　　sp_setsubscriptionxactseqno 存储过程，可用来跳过一个或多个导致错误的事务。非SQL Server 的订阅服务器没有此选项。
+ 
+　　重要事项：
+
+　　在典型的复制处理中，应该不会遇到任何需要跳过的错误。跳过错误时要谨慎，要了解发生错误的条件、错误的起因以及需要跳过错误或特定事务而不解决的理由。如果在订阅服务器上跳过发布服务器上提交的事务，则这两个节点就不会完全同步，这会导致其他错误。
+
+　　-SkipErrors 参数:
+ 
+　　默认情况下，发布代理遇到错误时就会停止。如果使用 -SkipErrors 参数，并指定了预期的或不想让其干扰复制的错误，则代理就会记录错误信息，然后继续运行。例如，如果要指定分发代理，使其记录重复键违规但继续处理后续事务，就需要指定代理跳过错误 2601（不能在具有唯一索引 ’%.*ls’ 的对象 ’%.*ls’ 中插入重复键的行。）和 2627（违反了 %ls 约束 ’%.*ls’。不能在对象 ’%.*ls’ 中插入重复键）： -SkipErrors 2601;2627
